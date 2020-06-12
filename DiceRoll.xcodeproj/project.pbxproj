@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833ACDA724915E65003F96DE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833ACDA624915E65003F96DE /* SettingsView.swift */; };
+		833ACDAB24915F3A003F96DE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833ACDAA24915F3A003F96DE /* Settings.swift */; };
+		833ACDBA24930DD4003F96DE /* CDRoll+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833ACDB824930DD4003F96DE /* CDRoll+CoreDataClass.swift */; };
+		833ACDBB24930DD4003F96DE /* CDRoll+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833ACDB924930DD4003F96DE /* CDRoll+CoreDataProperties.swift */; };
 		836876C6248D877B008B9252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836876C5248D877B008B9252 /* AppDelegate.swift */; };
 		836876C8248D877B008B9252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836876C7248D877B008B9252 /* SceneDelegate.swift */; };
 		836876CB248D877B008B9252 /* DiceRoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 836876C9248D877B008B9252 /* DiceRoll.xcdatamodeld */; };
@@ -14,9 +18,16 @@
 		836876CF248D877C008B9252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836876CE248D877C008B9252 /* Assets.xcassets */; };
 		836876D2248D877C008B9252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836876D1248D877C008B9252 /* Preview Assets.xcassets */; };
 		836876D5248D877C008B9252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836876D3248D877C008B9252 /* LaunchScreen.storyboard */; };
+		836876DD248D88BB008B9252 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836876DC248D88BB008B9252 /* ResultsView.swift */; };
+		836876DF248D8957008B9252 /* RollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836876DE248D8957008B9252 /* RollView.swift */; };
+		836876E1248E7EC2008B9252 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836876E0248E7EC2008B9252 /* Dice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		833ACDA624915E65003F96DE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		833ACDAA24915F3A003F96DE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		833ACDB824930DD4003F96DE /* CDRoll+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDRoll+CoreDataClass.swift"; sourceTree = "<group>"; };
+		833ACDB924930DD4003F96DE /* CDRoll+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDRoll+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		836876C2248D877B008B9252 /* DiceRoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836876C5248D877B008B9252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836876C7248D877B008B9252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,9 @@
 		836876D1248D877C008B9252 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		836876D4248D877C008B9252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836876D6248D877C008B9252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836876DC248D88BB008B9252 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		836876DE248D8957008B9252 /* RollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollView.swift; sourceTree = "<group>"; };
+		836876E0248E7EC2008B9252 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +75,16 @@
 				836876C5248D877B008B9252 /* AppDelegate.swift */,
 				836876C7248D877B008B9252 /* SceneDelegate.swift */,
 				836876CC248D877B008B9252 /* ContentView.swift */,
+				836876DE248D8957008B9252 /* RollView.swift */,
+				833ACDA624915E65003F96DE /* SettingsView.swift */,
+				833ACDAA24915F3A003F96DE /* Settings.swift */,
+				836876E0248E7EC2008B9252 /* Dice.swift */,
+				836876DC248D88BB008B9252 /* ResultsView.swift */,
 				836876CE248D877C008B9252 /* Assets.xcassets */,
 				836876D3248D877C008B9252 /* LaunchScreen.storyboard */,
 				836876D6248D877C008B9252 /* Info.plist */,
+				833ACDB824930DD4003F96DE /* CDRoll+CoreDataClass.swift */,
+				833ACDB924930DD4003F96DE /* CDRoll+CoreDataProperties.swift */,
 				836876C9248D877B008B9252 /* DiceRoll.xcdatamodeld */,
 				836876D0248D877C008B9252 /* Preview Content */,
 			);
@@ -150,8 +171,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				836876CB248D877B008B9252 /* DiceRoll.xcdatamodeld in Sources */,
+				836876E1248E7EC2008B9252 /* Dice.swift in Sources */,
+				833ACDBB24930DD4003F96DE /* CDRoll+CoreDataProperties.swift in Sources */,
+				833ACDA724915E65003F96DE /* SettingsView.swift in Sources */,
+				833ACDAB24915F3A003F96DE /* Settings.swift in Sources */,
 				836876C6248D877B008B9252 /* AppDelegate.swift in Sources */,
 				836876CD248D877B008B9252 /* ContentView.swift in Sources */,
+				836876DF248D8957008B9252 /* RollView.swift in Sources */,
+				833ACDBA24930DD4003F96DE /* CDRoll+CoreDataClass.swift in Sources */,
+				836876DD248D88BB008B9252 /* ResultsView.swift in Sources */,
 				836876C8248D877B008B9252 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +321,7 @@
 				DEVELOPMENT_TEAM = 84LWTY6T5F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DiceRoll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +342,7 @@
 				DEVELOPMENT_TEAM = 84LWTY6T5F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DiceRoll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
