@@ -21,22 +21,12 @@ struct ContentView: View {
             RollView(settings: settings)
                 .tabItem {
                     Image(systemName: "person.3")
-                    Text("Everyone")
-                }
-            ResultsView()
-                .tabItem {
-                    Image(systemName: "checkmark.circle")
-                    Text("Contacted")
+                    Text("Roll")
                 }
             ResultsView()
                 .tabItem {
                     Image(systemName: "questionmark.diamond")
-                    Text("Uncontacted")
-                }
-            ResultsView()
-                .tabItem {
-                    Image(systemName: "person.crop.square")
-                    Text("Me")
+                    Text("Results")
                 }
         }
         .environmentObject(roll)

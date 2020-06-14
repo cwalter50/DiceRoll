@@ -52,7 +52,7 @@ struct RollView: View {
                 }
                 Spacer()
                 Button(action: {
-                    self.rollDice()
+                    self.rollDiceAndSave()
                 }) {
                     HStack {
                         Image(systemName: "hand.thumbsup")
@@ -83,15 +83,15 @@ struct RollView: View {
         
     }
     
-    func rollDice()
+    func rollDiceAndSave()
     {
-        roll.dice.removeAll()
-        for _ in 1...settings.numDice {
-            roll.dice.append(Die(numSides: settings.numSides))
-        }
-        roll.created = Date() // hopeing this will create a unique value in coreData
-        roll.updateSum()
+        reloadDice()
+        roll.created = Date() // hoping this will create a unique value in coreData. It might not be necessary.
         saveDataToCoreData(roll)
+        
+        // Simple Haptic Feedback with each roll
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         
     }
     
@@ -101,6 +101,7 @@ struct RollView: View {
         for _ in 1...settings.numDice {
             roll.dice.append(Die(numSides: settings.numSides))
         }
+        roll.updateSum()
     }
     
     func saveDataToCoreData(_ data: Roll) {

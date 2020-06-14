@@ -92,4 +92,19 @@ class Roll: ObservableObject, Identifiable {
 
 class Rolls: ObservableObject {
     @Published var rollList = [Roll]()
+    
+    var averageString: String {
+        var total = 0.0
+        for roll in rollList {
+            total += Double(roll.sum)
+        }
+        let average = total / Double(rollList.count)
+        let averageString = String(format: "%.2f", average)
+        
+        if rollList.count == 0
+        {
+            return "0.00"
+        }
+        return averageString
+    }
 }
